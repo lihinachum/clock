@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a1f7a"/>
+      <stop offset="1" stop-color="#e46fb4"/>
+    </linearGradient>
+    <linearGradient id="mane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff5fa2"/>
+      <stop offset=".35" stop-color="#ffe45f"/>
+      <stop offset=".65" stop-color="#6fe8a0"/>
+      <stop offset="1" stop-color="#5fb8ff"/>
+    </linearGradient>
+    <linearGradient id="horn" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#fff2a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <!-- horn -->
+  <path d="M33 18 L46 3 L39 21Z" fill="url(#horn)"/>
+  <!-- mane -->
+  <path d="M28 16 C16 20 12 34 14 46 C11 52 12 58 16 62 C20 52 24 44 26 36 C28 28 31 22 35 19Z" fill="url(#mane)"/>
+  <!-- head + neck -->
+  <path d="M26 20 C34 13 48 17 54 30 C58 38 56 45 49 45 C43 45 38 40 34 38 C32 46 30 54 28 62 L18 62 C20 50 20 30 26 20Z" fill="#fff"/>
+  <!-- ear -->
+  <path d="M28 20 L25 9 L33 17Z" fill="#fff"/>
+  <!-- muzzle -->
+  <ellipse cx="50" cy="39" rx="6" ry="5" fill="#ffd3ec"/>
+  <!-- eye -->
+  <path d="M38 28 Q42 31 46 28" stroke="#4a2a5e" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+</svg>
