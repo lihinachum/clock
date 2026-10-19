@@ -25,6 +25,7 @@ try {
         $ext = [IO.Path]::GetExtension($file).ToLower()
         $ctx.Response.ContentType = if ($types[$ext]) { $types[$ext] } else { 'application/octet-stream' }
         $ctx.Response.ContentLength64 = $bytes.Length
+        $ctx.Response.Headers['Cache-Control'] = 'no-cache'
         if ($ctx.Request.HttpMethod -ne 'HEAD') {
           $ctx.Response.OutputStream.Write($bytes, 0, $bytes.Length)
         }
